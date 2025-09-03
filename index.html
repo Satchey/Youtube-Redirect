@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+    <script>
+      fetch("https://script.google.com/macros/s/AKfycbyxrVgDbYvBzcxnvx7vIj7aUIBNODphwoKVGtcS7jAgYfhG1PQ3MX1MIw7Q_Q6171lDkg/exec")
+        .then(response => response.text())
+        .then(url => {
+          window.location.href = url;
+        })
+        .catch(error => {
+          document.body.innerHTML = "<p>Error loading redirect link.</p>";
+        });
+    </script>
+  </head>
+  <body>
+    <p>Redirecting you to a random page...</p>
+  </body>
+</html>
